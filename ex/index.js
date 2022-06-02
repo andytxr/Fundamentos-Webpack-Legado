@@ -1,3 +1,4 @@
-const logger = require('./logger');
+import People from './people'
 
-logger.info('Padrão CommonJS');
+const p = new People('Deco')
+console.log(p.toString());
