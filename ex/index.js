@@ -1,4 +1,18 @@
-import People from './people'
+const product = {
 
-const p = new People('Deco')
-console.log(p.toString());
+    name: 'Bike',
+    price: 500,
+    discount: 0.15,
+
+}
+
+function clone(obj){
+
+    return { ...obj }
+
+}
+
+const newProduct = clone(product);
+newProduct.name = 'Electric Bike';
+
+console.log(product, newProduct);
